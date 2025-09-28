@@ -1,0 +1,103 @@
+/*Default*/
+body{
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"HelveticaNeue",Arial,"Noto Sans",sans-serif;
+    color: #2D3748;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+/*Layout*/
+header {
+    grid-column: 1/-1; 
+}
+
+main{
+    grid-column: 1;
+}
+
+aside{
+    grid-column: 2;
+}
+
+footer{
+    grid-column: 1/-1;
+}
+
+/*Header Styling*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+header h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    margin: 0px;
+}
+.profilepic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/*Blog Styling*/
+article{
+    margin-bottom: 40px;
+}
+article h2{
+    font-size: 32px;
+    color:#48BB78;
+    margin-bottom: 2px;
+}
+article .meta{
+    color: #718096;
+    margin-bottom: 2px;
+}
+.float-right{
+    float: right;
+    margin: 10px 20px 10px 0;
+    width: 200px;
+}
+.float-left{
+    float: left;
+    margin: 10px 20px 10px 0;
+    width: 200px;
+}
+
+/*Sidebar Styling*/
+aside h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+aside section:nth-child(1){
+    background-color: #E2E8F0;
+    padding: 15px;
+    color: #000000;
+    border-radius: 5px;
+}
+
+aside section:nth-child(2) h3, aside section:nth-child(3) h3{
+    color:  #48BB78;
+}
+
+aside a{
+    color: #4299E1;
+    text-decoration: none;
+}
+
+/*Footer Styling*/
+footer{
+    background-color: #2C5282;
+    color: #FFFFFF;
+    padding: 15px;
+}
